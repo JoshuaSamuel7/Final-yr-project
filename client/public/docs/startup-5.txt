@@ -1,0 +1,190 @@
+================================================================================
+                    OFFICIAL BUSINESS PROSPECTUS
+                           CleanSea
+================================================================================
+
+COMPANY: CleanSea Technologies
+FOUNDED: May 2023
+HEADQUARTERS: Vancouver, Canada
+REGISTRATION: Canadian Business Number (12345678)
+STAGE: Series A Funding Round
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+CleanSea develops autonomous underwater drones (AUVs) equipped with AI for ocean
+cleanup and marine biodiversity restoration. Our technology removes plastic waste,
+monitors coral health, and tracks endangered species at scale.
+
+Vision: Restore ocean health through intelligent automation
+Mission: Deploy 1,000 autonomous cleaners in oceans by 2030
+
+FUNDING GOAL: 25 ETH (~$75,000 USD)
+FUNDS ALLOCATION:
+  - Hardware R&D: 40% (10 ETH)
+  - Manufacturing Setup: 25% (6.25 ETH)
+  - Deployment Operations: 20% (5 ETH)
+  - Science/Monitoring: 15% (3.75 ETH)
+
+================================================================================
+MARKET OPPORTUNITY
+================================================================================
+
+Total Addressable Market (TAM): $18.5B (ocean cleanup + conservation tech)
+Target Market: 5.25 trillion metric tons of plastic in oceans
+Market Growth: 28% CAGR (climate tech acceleration)
+
+Market Drivers:
+  - UN Sustainable Development Goal 14 (Ocean Life)
+  - Corporate ESG commitments to ocean restoration
+  - Government ocean pollution fines (EU: up to €100M)
+  - Tourism impact from ocean health degradation ($1.2B+/year loss)
+  - Scientific evidence linking ocean health to human health
+
+Competitive Advantages:
+  ✓ AI-powered autonomous navigation (no human piloting needed)
+  ✓ 50kg collection capacity per drone (vs. 10kg competitors)
+  ✓ 72-hour operational range (vs. 8-12 hours competitors)
+  ✓ Multi-modal capabilities (cleanup + monitoring + restoration)
+
+================================================================================
+PRODUCT & TECHNOLOGY
+================================================================================
+
+Core Products:
+
+1. CleanBot AUV (Autonomous Underwater Vehicle)
+   - Length: 1.5 meters, weight: 45 kg
+   - Battery: 72-hour endurance
+   - Collection mechanism: Net with AI-powered object recognition
+   - Payload capacity: 50 kg of plastic waste
+   - Operating depth: 0-300 meters
+   - Speed: 2-6 knots
+
+2. Ocean Monitoring System
+   - Real-time water quality sensors (pH, temperature, salinity, turbidity)
+   - Marine species identification via computer vision
+   - Coral bleaching detection algorithm (95% accuracy)
+   - Microplastic concentration mapping
+
+3. Command & Control Platform
+   - Fleet management dashboard
+   - Mission planning and optimization
+   - Real-time telemetry and video feeds
+   - Automated obstacle avoidance
+   - Data analytics and reporting
+
+Technology Stack:
+  - Autonomous Navigation: ROS2 + SLAM algorithms
+  - AI: TensorFlow for marine object detection
+  - Hardware: NVIDIA Jetson for edge computing
+  - Communication: Acoustic modem + satellite relay
+  - Energy: LiPo batteries + solar charging stations
+
+================================================================================
+TRACTION & METRICS
+================================================================================
+
+Prototype & Testing Results:
+  - 3 generations of prototypes completed
+  - 240+ operational test hours (0 failures)
+  - Successfully collected 2,800 kg of ocean plastic
+  - Tested in 4 countries (Canada, Iceland, Indonesia, Philippines)
+  - Scientific partnerships: 8 universities
+  - Media coverage: 40+ publications
+
+Current Deployment:
+  - 8 deployed AUVs (2 operational sites)
+  - 450+ tons of plastic recovered
+  - 1,200+ species documentation photos
+  - 98.2% mission success rate
+  - Customer list: 3 NGOs, 2 government agencies
+  - Monthly revenue: $24,000
+
+================================================================================
+TEAM
+================================================================================
+
+Leadership:
+  - CEO: Dr. Michael Chen, PhD Ocean Engineering (MIT), ex-MIT Media Lab
+  - CTO: Dr. Amara Okoye, Roboticist, PhD (CMU), 15 years R&D
+  - VP Operations: Jennifer Lee, MBA, operations management
+  - Chief Scientist: Prof. David Jones, Marine biologist (Oxford)
+
+Advisory Board:
+  - Dr. Sylvia Earle, Ocean explorer and TED Prize winner
+  - Dr. Ban Ki-moon, Former UN Secretary-General
+  - Jeremy Rifkin, Economist and climate strategist
+  - Ellen MacArthur, Circular economy pioneer
+
+Team: 14 full-time engineers + 3 scientists (target: 28 by 2025)
+
+================================================================================
+FINANCIAL PROJECTIONS
+================================================================================
+
+Year 1 (2024): 8 units deployed | $120,000 revenue | -$580,000 OpEx
+Year 2 (2025): 35 units deployed | $850,000 revenue | -$280,000 OpEx
+Year 3 (2026): 110 units deployed | $2.4M revenue | +$420,000 OpProfit
+
+Pricing Model:
+  - Hardware: $85,000 per AUV unit
+  - Annual service/monitoring: $15,000-25,000
+  - SaaS platform: $2,000-5,000/month
+  - Data licensing: Custom (monitoring data to universities/NGOs)
+
+Unit Economics:
+  - AUV manufacturing cost: $42,000
+  - Gross margin on hardware: 51%
+  - SaaS margin: 78%
+  - Blended gross margin: 58%
+
+================================================================================
+RISK & MITIGATION
+================================================================================
+
+Technical Risk:
+  Risk: Underwater environment unpredictable (salt water, pressure)
+  Mitigation: 240+ test hours completed; redundant systems
+
+Regulatory Risk:
+  Risk: Maritime regulations varying by country
+  Mitigation: Working with government agencies; permits obtained in 4 countries
+
+Market Risk:
+  Risk: Customer adoption slower than projected
+  Mitigation: Strong NGO/government partnerships; contracted deployments
+
+================================================================================
+EXIT OPPORTUNITIES
+================================================================================
+
+Strategic Buyers:
+  - Major ocean energy companies (Shell, Equinor, Orsted)
+  - Defense/military contractors (Lockheed, General Dynamics)
+  - Environmental conglomerates (Veolia, Covanta, Waste Management)
+  - Tech giants (Google Earth, Amazon conservation)
+
+IPO Timeline: 6-8 years with Series B target ($15M)
+
+================================================================================
+INVESTMENT TERMS
+================================================================================
+
+Investment: 25 ETH (minimum: 1 ETH)
+Valuation: 8,500 ETH cap (pre-money)
+Equity: 0.3% per ETH
+Vesting: 1-year cliff, 4-year vesting
+Board seat: Granted at 5+ ETH investment
+
+================================================================================
+Document Date: December 7, 2024
+Version: 1.0
+================================================================================
+Startup Five - Mock Official Doc
+
+Name: CleanSea
+Registration: 2020-11-05
+Summary: Ocean cleanup robotics.
+Official note: Demo document.

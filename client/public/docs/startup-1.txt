@@ -1,0 +1,191 @@
+================================================================================
+                    OFFICIAL BUSINESS PROSPECTUS
+                           NeuroFlow AI
+================================================================================
+
+COMPANY: NeuroFlow AI
+FOUNDED: January 2023
+HEADQUARTERS: San Francisco, CA
+REGISTRATION: Delaware C-Corporation (EIN: 98-1234567)
+STAGE: Series A Funding Round
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+NeuroFlow AI is a cognitive wellness platform powered by advanced AI algorithms
+that provides real-time mental health insights and personalized interventions.
+Our technology combines neuroscience with machine learning to detect early signs
+of mental health challenges and deliver proactive support.
+
+Vision: To democratize access to mental health care through intelligent technology
+Mission: Empower individuals with personalized cognitive wellness tools
+
+FUNDING GOAL: 15 ETH (~$45,000 USD)
+FUNDS ALLOCATION:
+  - Product Development: 40% (6 ETH)
+  - Team Expansion: 35% (5.25 ETH)
+  - Marketing & Growth: 15% (2.25 ETH)
+  - Operations: 10% (1.5 ETH)
+
+================================================================================
+MARKET OPPORTUNITY
+================================================================================
+
+Total Addressable Market (TAM): $9.2B globally
+Target Market: 500M+ adults with mental health challenges
+Current Penetration: <2% of target market using digital solutions
+
+Market Growth Projections:
+  - Digital mental health market growing at 16.5% CAGR
+  - Post-pandemic surge in mental wellness demand
+  - Increasing insurance coverage for digital therapeutics
+
+Competitive Advantages:
+  ✓ Proprietary AI model with 87% accuracy in early detection
+  ✓ Integration with wearables (Apple Watch, Fitbit, Oura Ring)
+  ✓ HIPAA-compliant infrastructure
+  ✓ FDA breakthrough device designation in progress
+
+================================================================================
+PRODUCT & TECHNOLOGY
+================================================================================
+
+Core Features:
+1. AI-Powered Daily Assessment
+   - Natural language processing for mood analysis
+   - Wearable data integration for biometric insights
+   - Real-time anomaly detection
+
+2. Personalized Interventions
+   - CBT-based exercises adapted to user patterns
+   - Peer support group recommendations
+   - Integration with licensed therapists
+
+3. Progress Tracking Dashboard
+   - 30-day, 90-day, annual wellness trends
+   - Predictive analytics for mental health trajectory
+   - Shareable reports for healthcare providers
+
+Technical Stack:
+  - Backend: Python, FastAPI, PostgreSQL
+  - ML: TensorFlow, PyTorch, scikit-learn
+  - Frontend: React, TypeScript, Mobile (React Native)
+  - Infrastructure: AWS, Docker, Kubernetes
+  - Security: SOC 2 Type II, ISO 27001
+
+================================================================================
+TRACTION & METRICS
+================================================================================
+
+User Metrics (as of Q4 2024):
+  - 45,000 active users (MoM growth: +23%)
+  - 67% daily engagement rate
+  - 4.8/5 average app rating (4,200+ reviews)
+  - $180,000 ARR (growing at 15% MoM)
+
+Partnerships & Integrations:
+  ✓ 12 Fortune 500 companies (EAP integration pilots)
+  ✓ 3 major health insurance providers
+  ✓ Integration with Headspace and Calm (in progress)
+  ✓ 45 licensed therapists and psychiatrists on network
+
+================================================================================
+TEAM
+================================================================================
+
+Leadership:
+  - CEO: Dr. Amelia Chen, PhD in Neuroscience (Stanford), ex-Google Brain
+  - CTO: Marcus Johnson, MS Computer Science (MIT), ex-OpenAI
+  - Chief Medical Officer: Dr. Robert Martinez, MD, Psychiatrist (Johns Hopkins)
+  - COO: Sarah Williams, MBA (Harvard Business School), ex-Uber Health
+
+Advisory Board:
+  - Dr. James Wilson, Chairman of Psychiatry (Stanford Medical School)
+  - Angela Foster, Venture Partner (a16z healthcare)
+  - Prof. David Lee, Director of Neuroscience Lab (UC Berkeley)
+
+Current Team: 18 full-time employees (target: 28 by EOY)
+
+================================================================================
+FINANCIAL PROJECTIONS
+================================================================================
+
+Year 1 (2024): $180,000 ARR | -$420,000 Operating Expense (R&D Heavy)
+Year 2 (2025): $850,000 ARR | -$180,000 Operating Expense
+Year 3 (2026): $2.4M ARR | +$320,000 Operating Profit
+
+Pricing Model:
+  - Freemium: $0 (basic daily assessment)
+  - Pro Individual: $9.99/month
+  - Family Plan: $19.99/month (up to 5 users)
+  - Enterprise: Custom pricing
+
+Unit Economics:
+  - Customer Acquisition Cost (CAC): $8.50
+  - Lifetime Value (LTV): $245.00
+  - LTV:CAC Ratio: 28.8x (excellent)
+  - Monthly Churn Rate: 3.2%
+
+================================================================================
+RISK ANALYSIS & MITIGATION
+================================================================================
+
+Regulatory Risk:
+  Risk: FDA/regulatory changes in digital health
+  Mitigation: FDA breakthrough device designation in progress; legal team
+
+Competition Risk:
+  Risk: Big Tech (Apple, Google) entering mental health
+  Mitigation: Focus on clinical efficacy; partnerships with existing players
+
+Clinical Validation Risk:
+  Risk: Study results may not show statistical significance
+  Mitigation: Multiple ongoing clinical trials; advisory board oversight
+
+================================================================================
+EXIT OPPORTUNITIES
+================================================================================
+
+Potential Acquirers:
+  - Telemedicine Platforms: Teladoc, MDLive, Amwell
+  - Insurance Companies: UnitedHealth, CVS Health, Humana
+  - Tech Giants: Apple Health, Google Health, Amazon Clinic
+  - Pharma: Janssen (J&J), Eli Lilly, Pfizer Behavioral Health
+
+IPO Timeline: 5-7 years (target Series B funding: $25M+)
+
+================================================================================
+INVESTMENT TERMS
+================================================================================
+
+Investment Amount: 15 ETH (minimum contribution: 0.5 ETH)
+Valuation: 5,000 ETH cap (pre-money)
+Token Allocation: 0.3% of company per ETH invested
+Liquidation Preference: 1x non-participating preferred
+Voting Rights: Standard
+Cliff: 1 year | Vesting: 4 years (monthly)
+
+================================================================================
+CONTACT & LEGAL
+================================================================================
+
+Website: www.neuroflow.ai
+Email: investors@neuroflow.ai
+Legal: The information in this prospectus is subject to change without notice.
+
+Document Date: December 7, 2024
+Version: 1.0
+Confidentiality: This document is confidential and intended for authorized
+recipients only. Unauthorized distribution is prohibited.
+
+================================================================================
+- MVP built and tested with 20 beta users.
+- Monthly recurring revenue: $2,300.
+- Seeking $10k to expand engineering team and marketing.
+Startup One - Mock Official Doc
+
+Name: Startup One Inc.
+Registration: 2023-01-12
+Summary: Developing AI-assisted productivity tools.
+Official note: This is a mock document for demo purposes.

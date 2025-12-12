@@ -1,0 +1,174 @@
+================================================================================
+                    OFFICIAL BUSINESS PROSPECTUS
+                           FinEdge
+================================================================================
+
+COMPANY: FinEdge
+FOUNDED: July 2023
+HEADQUARTERS: Lagos, Nigeria
+REGISTRATION: Nigeria Business Registration (BN: 2,850,903)
+STAGE: Series A Funding Round
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+FinEdge is a decentralized micro-lending platform enabling small and medium
+enterprises (SMEs) in Africa to access capital instantly using smart contracts.
+We leverage blockchain technology to eliminate intermediaries and reduce lending
+times from weeks to minutes.
+
+Vision: Financial inclusion for 500M+ unbanked SMEs in Africa
+Mission: Enable instant access to credit through decentralized finance
+
+FUNDING GOAL: 20 ETH (~$60,000 USD)
+FUNDS ALLOCATION:
+  - Smart Contract Development: 35% (7 ETH)
+  - Operations & Compliance: 30% (6 ETH)
+  - Community Building: 20% (4 ETH)
+  - Legal & Regulatory: 15% (3 ETH)
+
+================================================================================
+MARKET OPPORTUNITY
+================================================================================
+
+Total Addressable Market (TAM): $185B+ (African SME lending)
+Target Market: 40M SMEs in Sub-Saharan Africa
+Current Penetration: <0.5% have access to formal credit
+
+Market Drivers:
+  - 80% of African SMEs have no access to institutional credit
+  - Traditional banking costs SMEs 15-25% in fees
+  - Mobile money penetration: 500M+ users
+  - Growing cryptocurrency adoption in Africa
+
+Competitive Advantages:
+  ✓ Instant lending (vs. 2-4 weeks traditional banks)
+  ✓ 75% lower fees than traditional lenders
+  ✓ No collateral required (social collateral model)
+  ✓ Transparent smart contract terms
+
+================================================================================
+PRODUCT & TECHNOLOGY
+================================================================================
+
+Core Features:
+
+1. Smart Contract Lending Protocol
+   - Borrower verification via blockchain identity
+   - Automated loan disbursement and repayment
+   - 0% intermediary fees (vs. 18-22% traditional)
+   - Collateral-free lending with social verification
+
+2. Borrower Dashboard
+   - Loan application in 5 minutes
+   - Real-time loan status tracking
+   - Repayment scheduling and analytics
+   - Credit score building through on-chain history
+
+3. Lender Portal
+   - Risk-adjusted yield offerings (8-15% APY)
+   - Portfolio diversification
+   - Real-time performance metrics
+   - Regulatory compliance tools
+
+Blockchain Architecture:
+  - Smart Contracts: Solidity on Polygon Network
+  - Identity: Decentralized ID verification
+  - Stablecoin: USDC for lending denomination
+  - Governance: DAO structure (future)
+
+================================================================================
+TRACTION & METRICS
+================================================================================
+
+Beta Launch Results (6 months, Q3-Q4 2024):
+  - 2,340 loans originated
+  - Total capital deployed: $385,000
+  - Average loan size: $165
+  - Repayment rate: 96.8% (on-time)
+  - Average borrower rating: 4.6/5
+  - Growth rate: +45% MoM
+
+Current Metrics:
+  - Active borrowers: 3,200+
+  - Active lenders: 890+
+  - Monthly originations: $82,000
+  - Total loans processed: $420,000
+  - TVL (Total Value Locked): $520,000
+
+================================================================================
+TEAM
+================================================================================
+
+Leadership:
+  - CEO: Chioma Okonkwo, MBA (Harvard), ex-Paystack
+  - CTO: Ahmed Hassan, Blockchain architect, ex-Ethereum Foundation
+  - COO: Ibrahim Diabate, Finance expert, ex-Microloan NGO
+  - Chief Compliance Officer: Sarah Johnson, Regulatory attorney
+
+Advisory Board:
+  - Wycliffe Omondi, Former Central Bank Governor Kenya
+  - Dr. Anthony Amara, AI researcher, Stanford
+  - Amara Okafor, Women entrepreneur champion
+
+Team: 16 full-time (target: 32 by year-end 2025)
+
+================================================================================
+FINANCIAL PROJECTIONS
+================================================================================
+
+Year 1 (2024): $385,000 TVL | $45,000 revenue | -$280,000 OpEx
+Year 2 (2025): $2.8M TVL | $420,000 revenue | -$120,000 OpEx
+Year 3 (2026): $12M TVL | $1.8M revenue | +$600,000 OpProfit
+
+Revenue Model:
+  - Platform fee: 2% per loan (from lenders)
+  - Premium borrower tools: $5-15/month
+  - Analytics API: Custom pricing
+  - Enterprise lending: Custom arrangements
+
+Unit Economics:
+  - Average Lender Yield: 10% APY
+  - Platform Revenue per Loan: $3.30
+  - CAC: $8 | LTV: $145 | LTV:CAC: 18x
+
+================================================================================
+RISK & MITIGATION
+================================================================================
+
+Regulatory Risk:
+  Risk: Evolving crypto regulations in Africa
+  Mitigation: Proactive compliance; licensed lawyers in 4 countries
+
+Credit Risk:
+  Risk: Default rates higher than projected
+  Mitigation: Social collateral; community reputation model
+
+Market Risk:
+  Risk: Crypto adoption slower than expected
+  Mitigation: Cross-border USD transactions via stablecoin
+
+================================================================================
+EXIT OPPORTUNITIES
+================================================================================
+
+Strategic Buyers:
+  - Major African banks (Zenith, GTBank, Ecobank)
+  - International fintech (Remitly, Wise, TransferWise)
+  - Investment funds (Andreessen Horowitz, Multicoin Capital)
+  - Development finance institutions (World Bank, IFC)
+
+================================================================================
+INVESTMENT TERMS
+================================================================================
+
+Investment: 20 ETH (minimum: 1 ETH)
+Valuation: 6,500 ETH cap (pre-money)
+Equity: 0.3% of company per ETH
+Vesting: 1-year cliff, 4-year vesting
+
+================================================================================
+Document Date: December 7, 2024
+Version: 1.0
+================================================================================

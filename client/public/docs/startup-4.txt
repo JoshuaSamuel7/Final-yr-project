@@ -1,0 +1,182 @@
+================================================================================
+                    OFFICIAL BUSINESS PROSPECTUS
+                          HealthLoop
+================================================================================
+
+COMPANY: HealthLoop
+FOUNDED: September 2022
+HEADQUARTERS: Nairobi, Kenya
+REGISTRATION: Kenya Business Registration (CBN: 834672)
+STAGE: Series A Funding Round
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+HealthLoop is a telemedicine platform connecting rural patients in East Africa
+with qualified specialist doctors. We bridge the 85% doctor shortage in rural
+areas through video consultations, digital prescriptions, and follow-up care.
+
+Vision: Every person deserves access to quality healthcare
+Mission: Connect rural communities with specialist care
+
+FUNDING GOAL: 10 ETH (~$30,000 USD)
+FUNDS ALLOCATION:
+  - Technology Infrastructure: 35% (3.5 ETH)
+  - Doctor Network Expansion: 30% (3 ETH)
+  - Patient Acquisition: 20% (2 ETH)
+  - Regulatory/Operations: 15% (1.5 ETH)
+
+================================================================================
+MARKET OPPORTUNITY
+================================================================================
+
+Total Addressable Market (TAM): $8.2B (East African healthcare)
+Target Market: 65M rural residents in Kenya, Tanzania, Uganda
+Current Penetration: <2% use telemedicine services
+
+Market Drivers:
+  - 85% of specialist doctors concentrated in urban areas
+  - Rural healthcare infrastructure critically underfunded
+  - Smartphone penetration rising (60%+ in target areas)
+  - Mobile money adoption enables healthcare payments
+  - Government commitment to universal health coverage
+
+Competitive Advantages:
+  ✓ Offline prescription delivery (SMS-based in low-connectivity areas)
+  ✓ Lowest cost consultations ($2-5 vs. $25+ traditional clinics)
+  ✓ Integration with local health workers and CHVs
+  ✓ Support for multiple African languages
+
+================================================================================
+PRODUCT & TECHNOLOGY
+================================================================================
+
+Core Services:
+
+1. Video Consultations
+   - Real-time specialist consultations
+   - Low-bandwidth optimization for rural areas
+   - Recording capability for follow-ups
+   - Average wait time: 8 minutes
+
+2. Digital Prescriptions & Fulfillment
+   - Digital prescription delivery
+   - Integration with 1,200+ pharmacies
+   - Prescription tracking and follow-up
+   - SMS reminders for medication adherence
+
+3. Chronic Disease Management
+   - Ongoing monitoring for diabetes, hypertension
+   - Automated refills and reminders
+   - Patient education content
+   - Integration with home-based test devices
+
+4. Health Records
+   - Secure patient health records
+   - Interoperability with clinics
+   - Portable medical history
+
+Tech Stack:
+  - Mobile: React Native (iOS/Android)
+  - Backend: Node.js, PostgreSQL
+  - Infrastructure: AWS + local cloud (low latency)
+  - Offline-first architecture for connectivity issues
+  - Security: HIPAA-equivalent standards
+
+================================================================================
+TRACTION & METRICS
+================================================================================
+
+Current User Metrics:
+  - 28,400 registered patients
+  - 340 verified doctors on platform
+  - 12,800 consultations completed (8.5 months)
+  - 94.2% patient satisfaction rating
+  - Monthly consultations: 2,200 (growing 28% MoM)
+  - Average consultation fee: $3.50
+
+Partnership Traction:
+  ✓ 5 public health districts (500+ CHVs)
+  ✓ Partnerships with 1,200 pharmacies
+  ✓ Integration with Safaricom health program
+  ✓ Government digital health initiative integration
+  - Monthly recurring revenue: $18,500
+
+================================================================================
+TEAM
+================================================================================
+
+Leadership:
+  - CEO: Dr. Grace Mutua, MD (University of Nairobi), healthcare innovator
+  - CTO: Peter Kipchoge, MS Computer Science (IIT), ex-Safaricom
+  - COO: Victoria Mwangi, MBA (INSEAD), healthcare operations
+  - Medical Director: Dr. James Owuor, Internal Medicine specialist
+
+Advisory:
+  - Dr. Patrick Kariuki, Deputy Director of Health (Kenya)
+  - Prof. Catherine Kyobutungi, KEMRI epidemiologist
+  - Sarah Kiplagat, USAID healthcare lead East Africa
+
+Team: 11 full-time (target: 20 by Q2 2025)
+
+================================================================================
+FINANCIAL PROJECTIONS
+================================================================================
+
+Year 1 (2024): $180,000 consultations | $70,000 revenue | -$220,000 OpEx
+Year 2 (2025): $780,000 consultations | $310,000 revenue | -$95,000 OpEx
+Year 3 (2026): $2.1M consultations | $840,000 revenue | +$180,000 OpProfit
+
+Revenue Model:
+  - Platform fee: 15% of consultation (doctor/platform split: 85/15)
+  - Pharmacy commissions: 8-12% (on prescription fulfillment)
+  - Premium packages: $8-15/month (premium consultations)
+  - B2B bulk consultations: Custom pricing
+
+Unit Economics:
+  - Blended CAC: $3.20 per patient
+  - LTV: $42 per patient
+  - Gross Margin: 62%
+  - Break-even per consultation: $0.85
+
+================================================================================
+RISK & MITIGATION
+================================================================================
+
+Regulatory Risk:
+  Risk: Medical licensing requirements across countries
+  Mitigation: All doctors licensed; compliant with each country's standards
+
+Infrastructure Risk:
+  Risk: Connectivity limitations in rural areas
+  Mitigation: Offline-capable app; SMS fallback systems
+
+Payment Risk:
+  Risk: Low payment capacity in rural areas
+  Mitigation: Subsidized pricing; partnerships with health programs
+
+================================================================================
+EXIT OPPORTUNITIES
+================================================================================
+
+Strategic Buyers:
+  - Telemedicine Giants: Teladoc, MDLive, Amwell
+  - Regional Insurers: Britam, Kenya Re, Jubilee Insurance
+  - Tech Companies: Google Health, Amazon Clinic
+  - Development Finance: World Bank, IFC, Africa CDC
+
+================================================================================
+INVESTMENT TERMS
+================================================================================
+
+Investment: 10 ETH (minimum: 0.3 ETH)
+Valuation: 3,500 ETH cap (pre-money)
+Equity: 0.3% per ETH
+Vesting: 1-year cliff, 4-year vesting
+
+================================================================================
+Document Date: December 7, 2024
+Version: 1.0
+================================================================================
+Official note: Demo document.
