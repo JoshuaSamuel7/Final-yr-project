@@ -2,96 +2,129 @@ import React from 'react';
 
 const short = (s = '') => (s.length > 10 ? s.slice(0, 6) + '...' + s.slice(-4) : s);
 
+const getStatusColor = (status) => {
+  switch(status) {
+    case 'confirmed': return '#10b981';
+    case 'pending': return '#f59e0b';
+    case 'failed': return '#ef4444';
+    default: return '#60a5fa';
+  }
+};
+
+const getStatusBg = (status) => {
+  switch(status) {
+    case 'confirmed': return 'rgba(16,185,129,0.1)';
+    case 'pending': return 'rgba(245,158,11,0.1)';
+    case 'failed': return 'rgba(239,68,68,0.1)';
+    default: return 'rgba(96,165,250,0.1)';
+  }
+};
+
 export default function TransactionsPageClean({ txs = [], addTx, connectWallet, account }) {
-  const [connectedThisVisit, setConnectedThisVisit] = React.useState(false);
-  const [addr, setAddr] = React.useState(() => account || ('0x' + Math.random().toString(16).slice(2, 10)));
-  const [balance, setBalance] = React.useState(10);
-  const [sending, setSending] = React.useState(false);
-  const [to, setTo] = React.useState('0x' + 'f'.repeat(40));
-  const [amount, setAmount] = React.useState('0.1');
-
-  React.useEffect(() => {
-    setConnectedThisVisit(false);
-    setAddr(account || ('0x' + Math.random().toString(16).slice(2, 10)));
-  }, [account]);
-
-  async function ensureConnect() {
-    try {
-      await connectWallet();
-      setConnectedThisVisit(true);
-      setAddr(account || ('0x' + Math.random().toString(16).slice(2, 10)));
-    } catch (e) {
-      console.error('connect failed', e);
-      alert('Wallet connect failed');
-    }
-  }
-
-  function simulateSend() {
-    if (Number(amount) <= 0 || Number(amount) > balance) return alert('Invalid amount');
-    setSending(true);
-    addTx({ type: 'send', amount, status: 'pending' });
-    setTimeout(() => {
-      const ok = Math.random() > 0.15;
-      addTx({ type: 'send', amount, status: ok ? 'success' : 'failed' });
-      if (ok) alert('Simulated send ' + (ok ? 'success' : 'failure'));
-      setBalance((b) => +(b - Number(amount)).toFixed(4));
-      setSending(false);
-    }, 1400);
-  }
+  // Separate investment transactions from other transactions
+  const investmentTxs = txs.filter(t => t.type === 'investment' || t.type === 'donation').slice().reverse();
+  const otherTxs = txs.filter(t => !['investment', 'donation'].includes(t.type)).slice().reverse();
 
   return (
-    <div style={{padding: '1rem'}}>
-      <h2>Transactions</h2>
+    <div style={{padding: '1.5rem'}}>
+      <h2 style={{margin: '0 0 1.5rem 0', fontSize: '1.8rem'}}>Transactions & Investments</h2>
 
-      {!connectedThisVisit && (
-        <div style={{marginTop:12, padding:12, borderRadius:10, background:'linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))'}}>
-          <div style={{fontWeight:700}}>Connect Wallet</div>
-          <div style={{marginTop:8}}>For security and realism, please connect your wallet to perform transactions on this page. You will be prompted to connect each time you visit this page.</div>
-          <div style={{marginTop:12}}>
-            <button onClick={ensureConnect}>Connect Wallet</button>
-            <button onClick={()=>{ setConnectedThisVisit(true); }}>Use demo only</button>
+      {/* Portfolio Summary */}
+      {investmentTxs.length > 0 && (
+        <div style={{marginBottom: '2rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px'}}>
+          <div style={{padding: '20px', borderRadius: '12px', background: 'linear-gradient(135deg, rgba(16,185,129,0.1), rgba(6,182,212,0.05))', border: '1px solid rgba(16,185,129,0.2)'}}>
+            <div style={{fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: '8px', textTransform: 'uppercase', fontWeight: '600'}}>Total Invested</div>
+            <div style={{fontSize: '2rem', fontWeight: '700', color: '#10b981'}}>{investmentTxs.reduce((sum, t) => sum + (Number(t.amount) || 0), 0).toFixed(2)} ETH</div>
+          </div>
+          <div style={{padding: '20px', borderRadius: '12px', background: 'linear-gradient(135deg, rgba(96,165,250,0.1), rgba(6,182,212,0.05))', border: '1px solid rgba(96,165,250,0.2)'}}>
+            <div style={{fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: '8px', textTransform: 'uppercase', fontWeight: '600'}}>Active Investments</div>
+            <div style={{fontSize: '2rem', fontWeight: '700', color: '#60a5fa'}}>{investmentTxs.filter(t => t.status === 'confirmed').length}</div>
+          </div>
+          <div style={{padding: '20px', borderRadius: '12px', background: 'linear-gradient(135deg, rgba(245,158,11,0.1), rgba(6,182,212,0.05))', border: '1px solid rgba(245,158,11,0.2)'}}>
+            <div style={{fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: '8px', textTransform: 'uppercase', fontWeight: '600'}}>Total Equity</div>
+            <div style={{fontSize: '2rem', fontWeight: '700', color: '#f59e0b'}}>{investmentTxs.reduce((sum, t) => sum + (t.equityPercentage || 0), 0).toFixed(2)}%</div>
           </div>
         </div>
       )}
 
-      <div style={{display:'flex', gap:16, alignItems:'flex-start', marginTop:12, opacity: connectedThisVisit ? 1 : 0.35}}>
-        <div style={{width:320, padding:12, borderRadius:10, background:'linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))'}}>
-          <div style={{fontSize:12, color:'rgba(255,255,255,0.7)'}}>{connectedThisVisit ? 'Active Wallet' : 'Wallet (connect first)'}</div>
-          <div style={{marginTop:8, fontWeight:700}}>{connectedThisVisit ? addr : '—'}</div>
-          <div style={{marginTop:8, fontSize:14}}><span style={{fontWeight:600}}>{balance}</span> ETH</div>
-          <div style={{marginTop:12}}>
-            <input placeholder="To address" value={to} onChange={(e)=>setTo(e.target.value)} style={{width:'100%', padding:8, borderRadius:8, border:'1px solid rgba(255,255,255,0.04)'}} />
-            <input placeholder="Amount (ETH)" value={amount} onChange={(e)=>setAmount(e.target.value)} style={{width:'100%', padding:8, borderRadius:8, border:'1px solid rgba(255,255,255,0.04)', marginTop:8}} />
-            <div style={{display:'flex', gap:8, marginTop:8}}>
-              <button className={`btn-sending ${sending ? 'sending' : ''}`} onClick={() => { if (!connectedThisVisit) return alert('Please connect wallet first'); simulateSend(); }} disabled={sending || !connectedThisVisit}>
-                {sending ? (<><span className="spinner" style={{marginRight:8}}></span>Sending…</>) : 'Send ETH'}
-              </button>
-              <button onClick={()=>{ setBalance((b)=>+(b+1).toFixed(4)); }}>Faucet +1</button>
-            </div>
-          </div>
+      {/* Investment Transactions Section */}
+      <div style={{marginBottom: '2rem'}}>
+        <div style={{marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px'}}>
+          <h3 style={{margin: 0, fontSize: '1.3rem'}}>💰 Your Investments</h3>
+          <span style={{fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', background: 'rgba(96,165,250,0.1)', padding: '4px 8px', borderRadius: '4px'}}>
+            {investmentTxs.length} transaction{investmentTxs.length !== 1 ? 's' : ''}
+          </span>
         </div>
+        
+        {investmentTxs.length === 0 ? (
+          <div style={{padding: '2rem', textAlign: 'center', borderRadius: '12px', background: 'linear-gradient(135deg, rgba(15,23,42,0.6), rgba(30,41,59,0.6))', border: '1px solid rgba(96,165,250,0.1)'}}>
+            <div style={{fontSize: '2.5rem', marginBottom: '0.5rem'}}>🚀</div>
+            <div style={{fontSize: '1rem', fontWeight: '600', marginBottom: '0.5rem'}}>No investments yet</div>
+            <div style={{fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)'}}>Start investing in startups to see your equity stakes here</div>
+          </div>
+        ) : (
+          <div style={{display: 'grid', gap: '12px'}}>
+            {investmentTxs.map((t) => (
+              <div key={t.id} style={{padding: '16px', borderRadius: '10px', background: 'linear-gradient(135deg, rgba(15,23,42,0.7), rgba(30,41,59,0.7))', border: `1px solid ${getStatusColor(t.status)}25`, transition: 'all 0.3s ease', cursor: 'pointer'}}
+                onMouseEnter={(e) => {e.currentTarget.style.background = 'linear-gradient(135deg, rgba(15,23,42,0.85), rgba(30,41,59,0.85))';}}
+                onMouseLeave={(e) => {e.currentTarget.style.background = 'linear-gradient(135deg, rgba(15,23,42,0.7), rgba(30,41,59,0.7))';}}>
+                <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr auto', gap: '16px', alignItems: 'center'}}>
+                  {/* Company & Amount */}
+                  <div>
+                    <div style={{fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', marginBottom: '6px', textTransform: 'uppercase'}}>Company</div>
+                    <div style={{fontSize: '1.1rem', fontWeight: '600', color: '#60a5fa'}}>{t.campaignName || 'Unknown'}</div>
+                    <div style={{fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)', marginTop: '6px'}}>📅 {t.investmentDate}</div>
+                  </div>
 
-        <div style={{flex:1}}>
-          <div style={{marginBottom:8}}>Recent activity</div>
-          <div style={{background:'linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00))', padding:12, borderRadius:8}}>
-            {txs.length === 0 && <div className="tx-empty">No transactions recorded</div>}
-            <table style={{width: '100%', borderCollapse: 'collapse'}}>
-              <thead>
-                <tr style={{textAlign: 'left'}}><th>Type</th><th>Amount (ETH)</th><th>Hash</th><th>Status</th></tr>
-              </thead>
-              <tbody>
-                {txs.slice().reverse().map((t) => (
-                  <tr key={t.id} style={{borderTop: '1px solid rgba(255,255,255,0.03)'}}>
-                    <td style={{padding: '8px'}}>{t.type}</td>
-                    <td style={{padding: '8px'}}>{t.amount ? t.amount : '-'}</td>
-                    <td style={{padding: '8px'}}>{t.hash ? (<span>{short(t.hash)}</span>) : '-'}</td>
-                    <td style={{padding: '8px'}}>{t.status}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+                  {/* Investment Amount */}
+                  <div>
+                    <div style={{fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', marginBottom: '6px', textTransform: 'uppercase'}}>Amount</div>
+                    <div style={{fontSize: '1.1rem', fontWeight: '600', color: '#10b981'}}>{t.amount || '-'} ETH</div>
+                  </div>
+
+                  {/* Equity Percentage */}
+                  <div style={{background: getStatusBg(t.status), padding: '12px', borderRadius: '8px', textAlign: 'center', border: `1px solid ${getStatusColor(t.status)}40`}}>
+                    <div style={{fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', marginBottom: '6px', textTransform: 'uppercase'}}>Your Equity</div>
+                    <div style={{fontSize: '1.4rem', fontWeight: '700', color: getStatusColor(t.status)}}>{(t.equityPercentage || 0).toFixed(2)}%</div>
+                    <div style={{fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', marginTop: '4px'}}>of company</div>
+                  </div>
+
+                  {/* Status Badge */}
+                  <div style={{textAlign: 'center'}}>
+                    <span style={{
+                      padding: '6px 12px',
+                      borderRadius: '6px',
+                      background: getStatusBg(t.status),
+                      color: getStatusColor(t.status),
+                      fontSize: '0.85rem',
+                      fontWeight: '600',
+                      textTransform: 'capitalize',
+                      border: `1px solid ${getStatusColor(t.status)}40`
+                    }}>
+                      {t.status === 'confirmed' ? '✓ Confirmed' : t.status === 'pending' ? '⏳ Pending' : '✗ Failed'}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Transaction Details */}
+                <div style={{marginTop: '12px', paddingTop: '12px', borderTop: '1px solid rgba(255,255,255,0.05)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', fontSize: '0.8rem'}}>
+                  <div>
+                    <span style={{color: 'rgba(255,255,255,0.6)'}}>Transaction Hash:</span>
+                    <div style={{fontWeight: '600', color: 'rgba(255,255,255,0.9)', fontFamily: 'monospace', marginTop: '4px'}}>
+                      {t.hash ? short(t.hash) : '—'}
+                    </div>
+                  </div>
+                  <div>
+                    <span style={{color: 'rgba(255,255,255,0.6)'}}>📊 Investment Summary:</span>
+                    <div style={{fontWeight: '600', color: '#60a5fa', marginTop: '4px'}}>
+                      {t.amount} ETH = {(t.equityPercentage || 0).toFixed(2)}% of {t.campaignName}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

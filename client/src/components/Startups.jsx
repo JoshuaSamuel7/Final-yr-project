@@ -12,7 +12,7 @@ const Startups = ({ campaigns, onDonate }) => {
       </div>
       <div className="campaigns">
         {campaigns.map((c, i) => (
-          <CampaignCard key={i} campaign={c} onDonate={(amt) => onDonate(i, amt)} onView={() => navigate(`/startup/${i}`)} />
+          <CampaignCard key={i} campaign={c} campaignIndex={i} onView={() => navigate(`/startup/${i}`)} />
         ))}
       </div>
     </div>
