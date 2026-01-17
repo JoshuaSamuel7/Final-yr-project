@@ -121,16 +121,17 @@ const CampaignCreation = ({ onCreateCampaign, user, account, simulateMode }) => 
         investors: 0
       };
 
+      // Store locally without blockchain connection
       if (onCreateCampaign) {
         await onCreateCampaign(newCampaign);
       }
 
       alert(`Campaign "${formData.name}" created successfully! 🚀`);
+      setLoading(false);
       setTimeout(() => navigate('/founder-companies'), 500);
     } catch (err) {
       setError(err.message || 'Failed to create campaign');
       console.error('Campaign creation error:', err);
-    } finally {
       setLoading(false);
     }
   };

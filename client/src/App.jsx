@@ -963,35 +963,11 @@ function App() {
         <Route path="/wallet" element={user ? <WalletConnect connectWallet={connectWallet} account={account} /> : <Navigate to="/auth" replace />} />
         <Route path="/auth" element={!user ? <Auth onLogin={(u) => { handleLogin(u); }} /> : <Navigate to={userRole === 'FOUNDER' ? '/founder-dashboard' : '/dashboard'} replace />} />
         
-        {/* Home Route */}
-        <Route path="/" element={!user ? <>
-          <div className="form">
-            <div style={{display:'flex', gap:16, alignItems:'center'}}>
-              <div style={{flex:1}}>
-                <h1 style={{margin:'0 0 8px 0'}}>Launch the next great startup</h1>
-                <p style={{margin:'0 0 12px 0', color:'rgba(255,255,255,0.85)'}}>Create campaigns, attract investors, and run no-gas demos for your pitches. Sign up to get started.</p>
-                <div style={{display:'flex', gap:8}}>
-                  <button onClick={() => navigate('/auth')}>Sign Up / Login</button>
-                  <button onClick={() => navigate('/welcome')} style={{background:'transparent', color:'white', border:'1px solid rgba(255,255,255,0.06)'}}>Learn More</button>
-                </div>
-              </div>
-              <div style={{width:360}}>
-                <img src="https://images.unsplash.com/photo-1558016608-2f6d3b1e7d7e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a" alt="startup" style={{width:'100%', borderRadius:12, boxShadow:'0 20px 40px rgba(2,6,23,0.28)'}}/>
-              </div>
-            </div>
-          </div>
-          <div style={{marginTop:20}}>
-            <h3 style={{marginBottom:8}}>Featured startups</h3>
-            <div className="campaigns">
-              {campaigns.map((c, index) => (
-                <CampaignCard key={index} campaign={c} onDonate={(amt) => donate(index, amt)} />
-              ))}
-            </div>
-          </div>
-        </> : <Navigate to={userRole === 'FOUNDER' ? '/my-company' : '/dashboard'} replace />} />
+        {/* Home Route - Redirect to Welcome */}
+        <Route path="/" element={<Navigate to="/welcome" replace />} />
       </Routes>
 
-      <TransactionLog txs={txs} />
+      {/* <TransactionLog txs={txs} /> */}
       </div>
 
         <Modal open={modal.open} title={modal.title} onClose={() => setModal({open:false})}>{modal.body}</Modal>
